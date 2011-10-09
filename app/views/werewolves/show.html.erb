@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @werewolf.name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @werewolf.color %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @werewolf.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_werewolf_path(@werewolf) %> |
+<%= link_to 'Back', werewolves_path %>

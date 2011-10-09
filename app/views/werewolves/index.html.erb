@@ -1,0 +1,27 @@
+<h1>Listing werewolves</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @werewolves.each do |werewolf| %>
+  <tr>
+    <td><%= werewolf.name %></td>
+    <td><%= werewolf.color %></td>
+    <td><%= werewolf.email %></td>
+    <td><%= link_to 'Show', werewolf %></td>
+    <td><%= link_to 'Edit', edit_werewolf_path(werewolf) %></td>
+    <td><%= link_to 'Destroy', werewolf, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Werewolf', new_werewolf_path %>

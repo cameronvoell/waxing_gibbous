@@ -1,4 +1,8 @@
 WaxingGibbous::Application.routes.draw do
+  resources :microhowls
+
+  resources :werewolves
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

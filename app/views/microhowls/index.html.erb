@@ -1,0 +1,25 @@
+<h1>Listing microhowls</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Werewolf</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @microhowls.each do |microhowl| %>
+  <tr>
+    <td><%= microhowl.content %></td>
+    <td><%= microhowl.werewolf_id %></td>
+    <td><%= link_to 'Show', microhowl %></td>
+    <td><%= link_to 'Edit', edit_microhowl_path(microhowl) %></td>
+    <td><%= link_to 'Destroy', microhowl, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Microhowl', new_microhowl_path %>

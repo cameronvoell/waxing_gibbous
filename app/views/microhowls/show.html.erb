@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @microhowl.content %>
+</p>
+
+<p>
+  <b>Werewolf:</b>
+  <%= @microhowl.werewolf_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_microhowl_path(@microhowl) %> |
+<%= link_to 'Back', microhowls_path %>
